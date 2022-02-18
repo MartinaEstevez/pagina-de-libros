@@ -1,0 +1,304 @@
+/* clases para todas las paginas */
+.header-links {
+    display: flex;
+    height: 100px;
+    background-color:cadetblue;
+    align-items: center;}
+
+.header-links-item {
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+    padding: 30px;}
+
+.header-links-item:hover {
+    color:darkblue;}
+
+.header-links-item:focus{
+    color:darkblue;}
+
+.header-links-col{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.header-links-button{
+    text-decoration: none;
+    padding: 6px 40px 7px;
+    background-color:darkslategray;
+    color:floralwhite;
+    border-radius: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;}
+
+.header-links-button:hover {
+    background-color:lightslategray;}
+
+.header-links-button2{
+    padding: 6px 40px 7px;
+    margin: 15px;
+    background-color:midnightblue;
+    color:floralwhite;
+    border: none;
+    border-radius: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;}
+
+.header-links-button2:hover {
+    background-color:lightsteelblue;}
+ 
+
+
+
+/* clases en todos "Novelas graficos", "Poesia", "Ficcion General" y "Clasicos" */
+* {
+    box-sizing: border-box;}
+
+.container-products{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;}   
+
+.products-item{
+    display: flex;
+    flex-direction: row;}
+
+.products-row{
+    margin-left: 3%;}
+
+.products-col{
+    margin-bottom: 3%;}
+
+.card-body{
+    width: 110%;}
+
+.cardImg{
+   height: 18vw;
+   object-fit: cover;}
+
+.container-button {
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10px;
+    width: 10%;}
+
+.container-footer {
+    max-width: 1528px;
+    margin-top: 10%;
+    background-color: #033247; }
+
+.footer-row {
+    text-align: center;
+    width: 100%; }
+
+.footer-col {
+    padding: 20px;
+    border-right: 1px solid white; }
+    
+.footer-col-2 {
+    padding: 20px; }
+
+.footer-p {
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: white; }
+
+#abrirModal {
+    margin: 20px;}    
+
+/* css modal y boton de compras */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .myModal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-autor{
+      font-size: 20px;
+  }
+
+  .modal-precio{
+      font-size: 22px;
+  }
+  
+
+
+
+
+/* clases para contactanos.html */
+.loginForm {
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    color: dimgrey;}
+    
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;}    
+    
+.header h2 {
+    margin: 0;}
+    
+.form {
+    padding: 30px 40px;	}
+    
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;}
+    
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;}
+    
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;}
+    
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;}
+    
+.form-control.success input {
+    border-color: #2ecc71;}
+    
+.form-control.error input {
+    border-color: #e74c3c;}
+    
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;}
+    
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;}
+    
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;}
+    
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;}
+    
+.form-control.error small {
+    visibility: visible;}
+    
+.form button {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;}
+
+.container-welcome{
+  height: 30%;
+  margin-top: 5%;
+  padding-top: 5%;
+  background: #152F4F;
+  color:white;}
+
+.welcome-row{
+    align-items: center;
+    text-align: center;}
+
+.welcome-h2{
+    padding-bottom: 5%;}
+
+.animation{
+    display: none;}
+    
+
+
+
+/* clases de index.html */
+.background{
+    background-image:url(../assets/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;}
+
+.container-inicio {
+    padding-top: 5%;
+    padding-left: 3%;}
+
+.inicio-p{
+    font-family: 'Henny Penny', cursive;
+    font-size: 90px;
+    color: white;}
+
+
+
+
+/* css de "colecciones.html" */
+.container-developing{
+    margin: 100px;}
+
+.developing-p{
+    color: grey;}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px){
+    .header-links{
+        display: block;
+        height: 170px;}
+    
+    .products-button{
+        justify-content: unset;}
+
+    .container-products{
+        display: block;}
+
+    .inicio-p{
+        font-size: 50px;}}

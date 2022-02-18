@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/icon.png">
+	<title>Libros Clásicos</title>
+	<link rel="stylesheet" href="../styles/estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+<body id="background">
+	<header class="header-links">
+		<div class="col-6">
+            <a class="header-links-item" href="index.html">
+                Libros
+            </a>
+            <a class="header-links-item" href="colecciones.html">
+                Colecciones
+            </a>
+            <a class="header-links-item" href="contactanos.html">
+                Contactanos
+            </a>
+        </div>
+
+        <div class="header-links-col col-6">
+            <a class="header-links-button" href="./contactanos.html">
+                Log in
+            </a>
+            <button class="header-links-button2" onclick="mostrarCarrito()">
+                CARRITO
+            </button>
+        </div>
+	</header>
+
+    <div id="shoppingCartModal" class="modal">
+        <div class="myModal-content">
+            <div class="modal-header">
+                <h5 class="shoppingCartTitle">Shopping cart</h5>
+                <span id="closeShoppingCart" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></spam>
+            </div>
+            <div class="modal-body">
+                <div class="libros"></div>
+            </div>
+        </div>
+    </div>
+
+	<nav>
+		<ul class="nav nav-tabs nav-justified">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="clasicos.html">Clásicos</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="ficcionGeneral.html">Ficción general</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="poesia.html">Poesía</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="novelasGraficas.html">Novelas gráficas</a>
+			</li>
+		</ul>
+	</nav>
+    
+	<main class="container-products">
+        <div class="products-row">
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/elRetratodeDorianGrey.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"El retrato de Dorian Grey" de Oscar Wilde</h6>
+                        <p class="cardText">$2000</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('El retrato de Dorian Grey', 'Oscar Wilde' , 2000)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/cumbresBorrascosas.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"Cumbres borrascosas" de Emily Bronte</h6>
+                        <p class="cardText">$3100</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('Cumbres borrascosas', 'Emily Bronte' , 3100)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/historiaDeDosCiudades.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"Historia de dos ciudades" de Charles Dickens</h6>
+                        <p class="cardText">$2500</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('Historia de dos ciudades', 'Charles Dickens' , 2500)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products-row">
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/elGranGatsby.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"El gran Gatsby" de F. Scott Fitzgerald</h6>
+                        <p class="cardText">$2000</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('El gran Gatsby', 'F. Scott Fitzgerald' , 2000)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/mujercitas.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"Mujercitas" de Louisa May Alcott</h6>
+                        <p class="cardText">$2100</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('Mujercitas', 'Louisa May Alcott' , 2100)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-col">
+                <div class="products-item">
+                    <img src="../assets/dracula.jpg" class="cardImg" alt="...">
+                
+                    <div class="card-body">
+                        <h6 class="cardText">"Drácula" de Bram Stoker</h6>
+                        <p class="cardText">$3100</p>
+                        <button class="myBtn btn btn-success" onclick="comprar('Drácula', 'Bram Stoker' , 3100)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+
+    <div id="buyModal" class="modal">
+        <div class="myModal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <span id="closeBuyModal" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></spam>
+            </div>
+            <div class="modal-body">
+                <p class="modal-autor"></p>
+                <p class="modal-precio"></p>
+            </div>
+            <button id="btnComprar" class="btn btn-primary">Comprar</button>
+            <button id="btnCancelar" class="btn btn-secondary">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="container-button">
+        <a id="toggleModeBtn" class="btn btn-dark" role="button">Dark mode</a>
+    </div>
+
+    <div class="container-footer">
+        <div class="footer-row row">
+         <div class="footer-col col">
+           <p class="footer-p"><strong>Acerca de nosotros</strong></p>
+           <p class="footer-p"> amoleer@gmail.com</p>
+           <p class="footer-p"> 54 011 6763 9872 </p>
+           <p class="footer-p"> Calderstones Park <p>
+         </div>
+         <div class="footer-col col">
+            <div class="modal-client-list">
+                <div>
+                <p class="footer-p">Todos los clientes de nuestro negocio se encuentran aqui.</p>
+                </div>
+                <button type="button" class="btn btn-light" id="abrirModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Clientes
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="shoppingCartTitle" id="exampleModalLabel">Lista de nuestros clientes</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="footer-col-2 col">
+           <a class="footer-p" href="contactanos.html">Registrate y no te pierdas novedades acerca de tus libros favoritos.</a>
+         </div>
+        </div>
+      </div>
+    
+    <script type="Text/javascript" src="../src/app.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
+

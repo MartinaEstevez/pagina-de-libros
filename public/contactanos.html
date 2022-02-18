@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/icon.png">
+	<title>Pagina de libros</title>
+	<link rel="stylesheet" href="../styles/estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="background">
+	<header class="header-links">
+		<div class="col-6">
+            <a class="header-links-item" href="index.html">
+                Libros
+            </a>
+            <a class="header-links-item" href="colecciones.html">
+                Colecciones
+            </a>
+            <a class="header-links-item" aria-current="page" href="contactanos.html">
+                Contactanos
+            </a>
+        </div>
+
+        <div class="header-links-col col-6">
+            <a class="header-links-button" href="./contactanos.html">
+                Log in
+            </a>
+            <button class="header-links-button2" onclick="mostrarCarrito()">
+              CARRITO
+            </button>
+        </div>
+	</header>
+
+  <div id="shoppingCartModal" class="modal">
+    <div class="myModal-content">
+        <div class="modal-header">
+            <h5 class="shoppingCartTitle">Shopping cart</h5>
+            <span id="closeShoppingCart" class="close btn-close" data-bs-dismiss="modal" aria-label="Close"></spam>
+        </div>
+        <div class="modal-body">
+            <div class="libros"></div>
+        </div>
+    </div>
+  </div>
+
+
+	<div class="loginForm">
+    <div class="header">
+      <h2>Crea tu cuenta</h2>
+    </div>
+    <form id="form" class="form">
+      <div class="form-control">
+        <label for="username" >Nombre de usuario</label>
+        <input type="text" id="username" />
+        <br>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="username">Email</label>
+        <input type="email"  id="email" />
+        <br>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="username" >Contraseña</label>
+        <input type="password" id="password"/>
+        <br>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="username">Checkeo de contraseña</label>
+        <input type="password" id="password2"/>
+        <br>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <button class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+	<footer class="container-welcome">
+        <div class="welcome-row">
+            <h2 class="welcome-h2">Welcome</h2>
+            <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_fqygznk9.json" class="animation" background="transparent"  speed="1"  style="height: 300px;" loop autoplay></lottie-player>
+        </div>
+	</footer>
+  
+  <div class="container-button">
+    <a id="toggleModeBtn" class="btn btn-dark" role="button">Dark mode</a>
+  </div> 
+    
+  <script type="Text/javascript" src="../src/jquery.js"></script>  
+  <script type="Text/javascript" src="../src/app.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+</body>
+</html>
+
